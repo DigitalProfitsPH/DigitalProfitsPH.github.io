@@ -34,13 +34,20 @@
     items.forEach((el) => el.classList.add("is-visible"));
   }
 
-  // Episode 1 premieres Tue Oct 13, 2026, 6:00 PM Philippine time
+  // Episode 1 premieres Tue Oct 13, 2026, 6:00 PM Philippine time. Until then the video is private,
+  // so its links point to Subscribe instead. After that the HTML's own Episode 1 links apply.
   const premiere = new Date("2026-10-13T18:00:00+08:00");
   if (Date.now() < premiere.getTime()) {
+    const subscribe = "https://www.youtube.com/@digitalprofitsph?sub_confirmation=1";
+    document.querySelectorAll("[data-ep1-link]").forEach((link) => {
+      link.href = subscribe;
+      const label = link.querySelector("[data-ep1-label]");
+      if (label && link.dataset.ep1Pre) label.textContent = link.dataset.ep1Pre;
+    });
     const badge = document.querySelector("[data-ep1-badge]");
     const cta = document.querySelector("[data-ep1-cta]");
     if (badge) badge.textContent = "Oct 13 · 6 PM";
-    if (cta) cta.textContent = "Premiere: Oct 13, 6 PM (PH time) →";
+    if (cta) cta.textContent = "Premiere: Oct 13, 6 PM · I-subscribe para ma-notify →";
   }
 
   document.querySelectorAll("[data-year]").forEach((el) => { el.textContent = new Date().getFullYear(); });

@@ -489,6 +489,7 @@ a.episode:hover .play { transform: scale(1.1); }
   body { font-size: 1rem; }
   .phases { grid-template-columns: 1fr; }
   .hero-actions .btn { width: 100%; }
+  .btn { white-space: normal; text-align: center; }
   .hero-logo { width: 104px; height: 104px; right: -6px; top: -20px; }
   .wallet-card { padding: 22px 20px 18px; }
   .wallet-label { padding-right: 80px; }
