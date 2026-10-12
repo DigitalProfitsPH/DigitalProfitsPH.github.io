@@ -115,6 +115,8 @@ p { margin: 0 0 1em; }
   padding: 8px 12px; border-radius: 10px; transition: color 0.15s ease, background-color 0.15s ease;
 }
 .site-nav a:not(.btn):hover { color: #fff; background: rgba(255, 255, 255, 0.08); }
+.site-nav a.nav-tool { color: var(--gold); box-shadow: inset 0 0 0 1px rgba(255, 192, 46, 0.35); }
+.site-nav a.nav-tool:hover, .site-nav a.nav-tool[aria-current="page"] { color: var(--navy-900); background: var(--gold); }
 .site-nav .btn { margin-left: 8px; }
 
 .nav-toggle {
@@ -558,7 +560,7 @@ a.episode:hover .play { transform: scale(1.1); }
   .disclaimer { grid-column: 1 / -1; }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1040px) {
   .nav-toggle { display: inline-flex; }
   .site-nav {
     position: absolute; left: 0; right: 0; top: var(--header-h);
