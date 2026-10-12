@@ -8,6 +8,7 @@ Plain HTML, CSS and a little JavaScript. There's no build step: whatever is in t
 - `index.html`: the whole page (hero, Kuya JB, the 4 phases, the 3 rules, episodes, Ka-Profits, footer)
 - `styles.css`: colours and layout. The brand colours sit at the top under `:root`
 - `script.js`: mobile menu, scroll fade-ins, and the Episode 1 premiere label (switches by itself after Oct 13, 2026, 6 PM PH time)
+- `starting-point/`: the Starting Point Calculator from Episode 3 (`index.html` + `calc.js`). Viewers enter income, expenses, what they have and debts, and see their surplus, net worth, emergency-fund months, position 1/2/3 and time to ₱100K. Everything is computed in the browser; nothing is saved or sent. "Subukan ang halimbawa ni Ana" loads the episode's example.
 - `404.html`: the "page not found" page
 - `assets/`: logo, favicon, Kuya JB photo, episode thumbnails, social share image (`og-image.png`, 1200×630)
 

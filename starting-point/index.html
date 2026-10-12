@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="fil">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Starting Point Calculator · Digital Profits PH</title>
+  <meta name="description" content="Libreng calculator: alamin ang sobra mo kada buwan, net worth mo, at kung position 1, 2 o 3 ka bago ang first move mo papuntang ₱100K. Sa phone mo lang kinocompute, walang naise-save.">
+  <meta name="theme-color" content="#0b1437">
+  <link rel="canonical" href="https://digitalprofitsph.github.io/starting-point/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Digital Profits PH">
+  <meta property="og:title" content="Starting Point Calculator · The ₱100K Investment Challenge">
+  <meta property="og:description" content="Alamin kung nasaan ka ngayon: sobra kada buwan, net worth, at ang first move mo papuntang ₱100K.">
+  <meta property="og:url" content="https://digitalprofitsph.github.io/starting-point/">
+  <meta property="og:image" content="https://digitalprofitsph.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../script.js" defer></script>
+  <script src="calc.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="../" aria-label="Digital Profits PH, home">
+        <img src="../assets/logo-96.webp" width="44" height="44" alt="">
+        <span>Digital Profits <b>PH</b></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="../#kuya-jb">Kuya JB</a>
+        <a href="../#challenge">Ang Challenge</a>
+        <a href="../#rules">3 Rules</a>
+        <a href="../#episodes">Episodes</a>
+        <a href="../#ka-profits">Ka-Profits</a>
+        <a class="btn btn-sm btn-primary" href="https://www.youtube.com/@digitalprofitsph?sub_confirmation=1" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.7 15.1V8.9L15.5 12l-5.8 3.1Z"/></svg>
+          Subscribe
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero calc-hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container calc-hero-inner">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Phase 1 · Episode 3 tool</p>
+        <h1>Alamin kung nasaan ka ngayon</h1>
+        <p class="lead">Bago ang first move, alamin muna ang posisyon mo. Ilagay ang numbers mo, at ipapakita namin ang sobra mo kada buwan, ang net worth mo, at kung position 1, 2 o 3 ka.</p>
+        <p class="privacy-note">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5Zm-3 8V7a3 3 0 1 1 6 0v3H9Z"/></svg>
+          Sa phone o computer mo lang ito kinocompute. Walang naise-save o naipapadala na numbers.
+        </p>
+      </div>
+    </section>
+
+    <section class="calc-section">
+      <div class="container calc-grid">
+        <form class="calc-form" data-calc-form novalidate>
+          <div class="calc-actions">
+            <button class="btn btn-dark btn-sm" type="button" data-load-example>Subukan ang halimbawa ni Ana</button>
+            <button class="btn btn-sm btn-plain" type="reset">I-clear</button>
+          </div>
+
+          <fieldset class="calc-group">
+            <legend><span aria-hidden="true">💵</span> 1. Kita</legend>
+            <label class="field">
+              <span class="field-label">Take-home pay kada buwan</span>
+              <span class="money"><span aria-hidden="true">₱</span><input type="number" name="kita" min="0" step="1" inputmode="numeric" placeholder="0"></span>
+              <span class="hint">Lahat ng pumapasok: sweldo, sideline, commission. Kung pabago-bago, kunin ang average ng huling 3 buwan.</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="calc-group">
+            <legend><span aria-hidden="true">🧾</span> 2. Gastos</legend>
+            <label class="field">
+              <span class="field-label">Gastos kada buwan</span>
+              <span class="money"><span aria-hidden="true">₱</span><input type="number" name="gastos" min="0" step="1" inputmode="numeric" placeholder="0"></span>
+              <span class="hint">Fixed (upa, bills, internet, pamasahe, padala sa pamilya) at variable (pagkain, kape, delivery, shopping).</span>
+            </label>
+            <label class="field">
+              <span class="field-label">Gastos na hindi buwan-buwan, <strong>kada taon</strong></span>
+              <span class="money"><span aria-hidden="true">₱</span><input type="number" name="taunan" min="0" step="1" inputmode="numeric" placeholder="0"></span>
+              <span class="hint">Pasko, birthdays, enrollment, rehistro ng motor, pagiging ninong o ninang. Hahatiin namin sa 12.</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="calc-group">
+            <legend><span aria-hidden="true">🏦</span> 3. Mayroon ka</legend>
+            <label class="field">
+              <span class="field-label">Emergency fund</span>
+              <span class="money"><span aria-hidden="true">₱</span><input type="number" name="ef" min="0" step="1" inputmode="numeric" placeholder="0"></span>
+              <span class="hint">Perang nakahiwalay, para lang sa biglaang gastos.</span>
+            </label>
+            <label class="field">
+              <span class="field-label">Iba pang ipon at investments</span>
+              <span class="money"><span aria-hidden="true">₱</span><input type="number" name="ipon" min="0" step="1" inputmode="numeric" placeholder="0"></span>
+              <span class="hint">Cash, bangko, e-wallet, investments. Huwag munang isama ang cellphone o appliances.</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="calc-group">
+            <legend><span aria-hidden="true">📉</span> 4. Utang</legend>
+            <label class="field">
+              <span class="field-label">Kabuuang utang</span>
+              <span class="money"><span aria-hidden="true">₱</span><input type="number" name="utang" min="0" step="1" inputmode="numeric" placeholder="0"></span>
+              <span class="hint">Credit card, loans, hulugan sa mga app, at utang sa kaibigan o kamag-anak.</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="mataas">
+              <span><strong>May utang akong mataas ang interest</strong><br><span class="hint">Halimbawa: credit card na hindi nababayaran nang buo, online lending apps, o 5-6.</span></span>
+            </label>
+          </fieldset>
+
+          <fieldset class="calc-group">
+            <legend><span aria-hidden="true">🎯</span> 5. Papuntang ₱100K</legend>
+            <label class="field">
+              <span class="field-label">Magkano ang kaya mong i-invest kada buwan?</span>
+              <span class="money"><span aria-hidden="true">₱</span><input type="number" name="invest" min="0" step="1" inputmode="numeric" value="1000"></span>
+              <span class="hint">Rule 1 ni Kuya JB: at least 5–10% ng kita, minimum ₱1,000.</span>
+            </label>
+          </fieldset>
+
+          <div class="calc-after">
+            <a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLdHB0yVSAcLo" target="_blank" rel="noopener">Panoorin ang The ₱100K Investment Challenge</a>
+          </div>
+        </form>
+
+        <aside class="calc-results" aria-live="polite" data-results>
+          <div class="results-card">
+            <p class="kicker">Ang resulta mo</p>
+            <div class="results-empty" data-empty>
+              <p>Ilagay ang <strong>kita</strong> at <strong>gastos</strong> mo para makita ang posisyon mo.</p>
+            </div>
+            <div class="results-body" data-body hidden>
+              <div class="result-stats">
+                <div class="result-stat">
+                  <p class="result-label" data-sobra-label>Sobra kada buwan</p>
+                  <p class="result-value" data-sobra>₱0</p>
+                  <p class="result-sub" data-sobra-sub></p>
+                </div>
+                <div class="result-stat">
+                  <p class="result-label">Net worth</p>
+                  <p class="result-value" data-networth>₱0</p>
+                  <p class="result-sub" data-networth-sub>Mayroon ka − utang</p>
+                </div>
+                <div class="result-stat">
+                  <p class="result-label">Emergency fund</p>
+                  <p class="result-value" data-efmonths>0 buwan</p>
+                  <p class="result-sub">ng gastos mo. General na gabay: 3–6 buwan.</p>
+                </div>
+              </div>
+
+              <div class="position-card" data-position-card>
+                <p class="position-title" data-position-title></p>
+                <p class="position-text" data-position-text></p>
+                <p class="position-extra" data-position-extra hidden></p>
+              </div>
+
+              <div class="timeline">
+                <p class="result-label">Papuntang ₱100,000</p>
+                <ul data-timeline></ul>
+                <p class="result-sub">Contributions lang ito, walang assumed na kita o returns. Puwedeng tumaas o bumaba ang investments.</p>
+              </div>
+            </div>
+            <p class="calc-disclaimer">Paalala: general na gabay lang ito, hindi financial advice. Iba-iba ang sitwasyon ng bawat isa.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom" style="margin-top:0;border-top:0;padding-top:0;">
+      <p>© <span data-year>2026</span> Digital Profits PH · <span class="motto small" style="display:inline-flex;margin:0;"><span>Ipon.</span><span>Invest.</span><span>Palago.</span></span></p>
+      <a href="../">← Bumalik sa home</a>
+    </div>
+  </footer>
+</body>
+</html>
